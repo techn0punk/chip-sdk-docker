@@ -1,5 +1,5 @@
 # chip-sdk-docker
-An alternative [CHIP-SDK](https://github.com/NextThingCo/CHIP-SDK) environment based on docker instead of Vagrant. Everything about this repo is basically the same as the original except there's now no need to setup VirtualBox or Vagrant. Because of this the README for this repo is rather short and you should refer to the README of the original git repo for full documentation.
+An alternative [CHIP-SDK](https://github.com/nextthingcomirror/CHIP-SDK) environment based on docker instead of Vagrant. Everything about this repo is basically the same as the original except there's now no need to setup VirtualBox or Vagrant. Because of this the README for this repo is rather short and you should refer to the README of the original git repo for full documentation.
 
 ## Build
 ```
@@ -19,7 +19,7 @@ $ docker run \
 ```
 
 ### docker --volume
-The docker `--volume` option can be used to share files and directories between containers and your host machine. When using the tools in [CHIP-tools](https://github.com/NextThingCo/CHIP-tools) it is common that images are downloaded for flashing to your CHIP, we can use the `--volume` option here to cache these downloads:
+The docker `--volume` option can be used to share files and directories between containers and your host machine. When using the tools in [CHIP-tools](https://github.com/nextthingcomirror/CHIP-tools) it is common that images are downloaded for flashing to your CHIP, we can use the `--volume` option here to cache these downloads:
 ```
 $ docker run \
     --privileged \

@@ -40,7 +40,7 @@ ARG MTD_BRANCH=by/1.5.2/next-mlc-debian
 
 RUN git clone \
   --single-branch --depth 1 --branch ${MTD_BRANCH} \
-  http://github.com/nextthingco/chip-mtd-utils && \
+  http://github.com/nextthingcomirror/chip-mtd-utils && \
   cd chip-mtd-utils && \
   make && \
   make install && \
@@ -58,7 +58,7 @@ ARG BLD_ROOT_BRANCH=chip/stable
 
 RUN git clone \
   --single-branch --depth 1 --branch ${BLD_ROOT_BRANCH} \
-  https://github.com/NextThingCo/CHIP-buildroot
+  https://github.com/nextthingcomirror/CHIP-buildroot
 
 RUN mv /usr/local/bin/sunxi-fel /usr/local/bin/sunxi-fel.orig && \
   mv /usr/bin/fastboot /usr/bin/fastboot.orig
